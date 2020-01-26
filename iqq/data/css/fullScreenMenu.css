@@ -1,0 +1,20 @@
+/**This style sheet is for the full screen nav used on the home.html page**/
+
+.menuButton
+{
+    position: absolute;
+    height: 5%;
+    width: 10%;
+    top: 95%;
+    bottom: 0%;
+    left:45%;
+    right: 45%;
+    background-color: white;
+    color: black;
+    opacity: 0.85;
+    text-align: center;
+    font-size: xx-large;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    cursor: grab;
+}

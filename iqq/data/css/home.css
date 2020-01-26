@@ -1,0 +1,145 @@
+html
+{
+	margin: 0px;
+	height: 100%;
+	width: 100%;
+}
+
+/**Main contiainer of page**/
+.body
+{
+    background-image: url("../images/home-bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: darkgray;
+    font-family: Trebuchet MS;
+}
+
+.centerPageTextGlow
+{
+  color: white;
+  position: absolute;
+  width: 50%;
+  height: 20%;
+  top: 25%;
+  left: 25%;
+  right: 25%;
+  bottom: 45%;
+  text-align: center;
+  font-size: 4vw;
+  /* -webkit-animation: glow 2s ease-in-out infinite alternate;
+  -moz-animation: glow 2s ease-in-out infinite alternate;
+  animation: glow 2s ease-in-out infinite alternate; */
+}
+
+@-webkit-keyframes glow {
+  /* from {
+    text-shadow: 0 0 5px white, 0 0 15px white, 0 0 20px white, 0 0 25px white, 0 0 30px white, 0 0 35px white, 0 0 40px white;
+  } */
+  to {
+    text-shadow: 0 0 10px blue, 0 0 20px blue, 0 0 25px blue, 0 0 30px blue, 0 0 35px blue, 0 0 40px blue, 0 0 45px blue;
+  }
+}
+
+/**FULL SCREEN NAV MENU CSS**/
+.menuButton
+{
+  position: absolute;
+  height: 5%;
+  width: 10%;
+  top: 95%;
+  bottom: 150px;
+  left: 45%;
+  right: 45%;
+  background-color: white;
+  color: black;
+  text-align: center;
+  font-size: 32px;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  cursor: default;
+  transition-duration: 0.5s;
+}
+.menuOverlay
+{
+  width: 100%;
+  height: 0%;
+  left: 0%;
+  top: 0%;
+  position: fixed;
+  background-color: black;
+  opacity: 0.8;
+  overflow: hidden;
+  z-index: 5;
+  transition-duration: 0.3s;
+}
+.overlayLinkList
+{
+  position: relative;
+  width: 20%;
+  height: 75%;
+  left: 5%;
+  top: 12.5%;
+  bottom: 12.5%;
+  /**border: 2px red solid;**/
+  padding: 1em;
+  color: white;
+}
+.overlayLinkList a
+{
+  display: table-cell;
+  text-decoration: none;
+  text-underline-position: left;
+  font-size: 1.5em;
+  color: inherit;
+}
+.overlayLinkList a:hover
+{
+  transition-duration: 0.5s;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.menuCloseButton
+{
+  position: absolute;
+  height: 5%;
+  width: 10%;
+  left: 45%;
+  right: 45%;
+  bottom: 4%;
+  top: 90%;
+  text-align: center;
+  font-size: 5em;
+  cursor: default;
+  color: red;
+}
+.overlayTimeDatePatch
+{
+  color: greenyellow;
+  font-size: 0.75vw;
+  position: absolute;
+  bottom: 1vw;
+  right: 0vw;
+  left: 80vw;
+
+  cursor: default;
+}
+
+/*Overlay table CSS*/
+.navLinkTable
+{
+	width: 100%;
+	color: white;
+	padding: 10vw;
+	font-size: 30px;
+}
+.navLinkTable a
+{
+  text-decoration: none;
+  color: inherit;
+  transition-duration: 10ms;
+}
+.navLinkTable a:hover
+{
+  text-decoration: underline;
+}

@@ -1,0 +1,92 @@
+{
+  "name": "dockly",
+  "version": "0.0.0-development",
+  "description": "Immersive terminal interface for managing docker containers and services",
+  "main": "index.js",
+  "scripts": {
+    "test": "yarn run lint",
+    "lint": "standard && yarn run lint:lockfile",
+    "lint:fix": "standard --fix",
+    "lint:lockfile": "lockfile-lint --path yarn.lock --type yarn --validate-https --allowed-hosts npm yarn",
+    "semantic-release": "semantic-release"
+  },
+  "files": [
+    "hooks",
+    "lib",
+    "src",
+    "widgets",
+    "index.js",
+    "dockerRunScript.sh"
+  ],
+  "engines": {
+    "node": ">=7.6.0"
+  },
+  "bin": {
+    "dockly": "./index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lirantal/dockly.git"
+  },
+  "keywords": [
+    "docker",
+    "container",
+    "swarm",
+    "cli",
+    "shell",
+    "blessed",
+    "command",
+    "command line",
+    "console",
+    "terminal"
+  ],
+  "author": {
+    "name": "Liran Tal",
+    "email": "liran.tal@gmail.com"
+  },
+  "contributors": [
+    {
+      "name": "Matan Avneri",
+      "email": "Matan.av@gmail.com",
+      "url": "https://github.com/MatanAvneri"
+    },
+    {
+      "name": "Trevor Farlow",
+      "url": "https://github.com/trevdor"
+    },
+    {
+      "name": "Israel Roldan",
+      "url": "https://github.com/israelroldan",
+      "email": "oss@isro.me"
+    }
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lirantal/dockly/issues"
+  },
+  "homepage": "https://github.com/lirantal/dockly#readme",
+  "dependencies": {
+    "blessed": "^0.1.81",
+    "blessed-contrib": "^4.8.18",
+    "chalk": "2.4.2",
+    "command-line-args": "^5.1.1",
+    "command-line-usage": "^5.0.5",
+    "dockerode": "2.5.8",
+    "figures": "^2.0.0",
+    "glob": "^7.1.6",
+    "lockfile-lint": "^3.0.5",
+    "semver": "6.3.0"
+  },
+  "devDependencies": {
+    "semantic-release": "15.13.3",
+    "standard": "^12.0.1"
+  },
+  "release": {
+    "branch": "master"
+  },
+  "standard": {
+    "ignore": [
+      "docs/**"
+    ]
+  }
+}

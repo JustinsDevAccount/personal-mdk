@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Start Page</title>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script type="text/javascript" src="js/settings.js"></script>
+<script type="text/javascript" src="js/menu.js"></script>
+<script type="text/javascript" src="js/custom.js"></script>
+<link rel="stylesheet" href="css/style.css"/>
+</head>
+<body id="body">
+	<div id="wrapper">
+		<header>
+			<div id="fulltime">
+					<h1 style="font-size:2em">&#9830;</h1>
+				<h1 id="title">JP's Startpage</h1>
+				<h1 id="time"></h1>
+				<h2 id="day"></h2>
+				<h3 id="date"></h3>
+			</div>
+			<div class="clear"></div>
+		</header>
+		<section id="bm">
+			<ul>
+				<li class="title" onclick="dropdownToggle(this)">Quicklinks</li>
+				<li class="link"><a href="http://localhost" target="_blank">127.0.0.1</a></li>
+			</ul>
+			<ul>
+				<li class="title" onclick="dropdownToggle(this)">CyberSec Tools &amp; Vendors</li>
+				<li class="link"><a href="https://null-byte.wonderhowto.com/" target="_blank">NullByte</a></li>
+				<li class="link"><a href="https://www.exploit-db.com/" target="_blank">ExploitDB</a></li>
+				<li class="link"><a href="https://parrotlinux.org/" target="_blank">ParrotSec</a></li>
+				<li class="link"><a href="https://www.kali.org/" target="_blank">Kali</a></li>
+				<li class="link"><a href="https://builtwith.com/" target="_blank">BuiltWith</a></li>
+				<li class="link"><a href="https://www.shevirah.com/" target="_blank">Shevirah</a></li>
+			</ul>
+			<ul>
+				<li class="title" onclick="dropdownToggle(this)" target="_blank">Coding</li>
+				<li class="link"><a href="https://datacamp.com" target="_blank">Datacamp</a></li>
+				<li class="link"><a href="https://edx.org" target="_blank">EdX</a></li>
+				<li class="link"><a href="https://github.com" target="_blank">Github</a></li>
+			</ul>
+			<ul>
+				<li class="title" onclick="dropdownToggle(this)" target="_blank">News/Articles</li>
+				<li class="link"><a href="https://www.zdnet.com/" target="_blank">ZDNet</a></li>
+				<li class="link"><a href="https://newsroom.intel.com/" target="_blank">Intel Newsroom</a></li>
+			</ul>
+			<ul>
+				<li class="title" onclick="dropdownToggle(this)" target="_blank">Cool Dev Projects</li>
+				<li class="link"><a href="https://github.com/butlerx/wetty" target="_blank">Wetty</a></li>
+				<li class="link"><a href="https://github.com/lirantal/dockly" target="_blank">Dockly</a></li>
+				<li class="link"><a href="https://icecoder.net/" target="_blank">IceCoder</a></li>
+				<li class="link"><a href="https://github.com/spencerkraisler/Quadrotor-Trajectory-Navigation" target="_blank">Quadcopter Evasion</a></li>
+				<li class="link"><a href="https://github.com/k4m4/terminals-are-sexy" target="_blank">Cool CLI Tools</a></li>
+			</ul>
+			<div class="clear"></div>
+		</section>
+		<form id="search" method="get">
+			<ul class="engine">
+<!-- Example Engines that get read in from js/settings.js --
+				<li class="first"><p id="curreng"><a href="http://google.com/search" id="q">google</a></p>
+					<ul class="sub">
+						<li class="sel"><a href="http://www.google.com/images" id="q">google-img</a></li>
+						<li class="sel"><a href="http://soundcloud.com/search" id="q">soundcloud</a></li>
+						<li class="sel"><a href="http://youtube.com/results" id="search_query">youtube</a></li>
+						<li class="sel"><a href="http://vimeo.com/search" id="q">vimeo</a></li>
+					</ul>
+				</li>-->
+			</ul>
+			<ul class="type">
+<!-- Example Links Toggle Icon that gets created by js/custom.js --
+				<li class="first" id="linksrc"><p id="currtype"><a href="#">M</a></p>
+				  <ul class ="sub">
+					<li class="sel"><a href="#">D</a></li>
+				  </ul>
+				</li>-->
+			</ul>
+			<input type="text" id="query" autocomplete="off"/>
+			<div class="clear"></div>
+		</form>
+	</div>
+</body>
+</html>

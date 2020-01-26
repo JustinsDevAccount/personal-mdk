@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<title>IQQ Network</title>
+
+    <head>
+        <link rel="stylesheet" href="data/css/home.css"/>
+        <link rel="alternatestylesheet" href="data/css/menu.css"/>
+    </head>
+
+    <body class="body" onload="initScript()">
+
+        <script type="text/javascript" src="data/js/home.js"></script>
+
+        <!--Button to open nav screen-->
+        <div id="menuOpenButton" class="menuButton" onclick="toggleNavScreen()">&#9776;</div>
+        <div class="centerPageTextGlow">IQQ Network Development Kit</div>
+        <!--FULL SCREEN NAV-->
+        <div id="menuOverlayElement" class="menuOverlay">
+          <div class="menuCloseButton" onclick="toggleNavScreen()">&times;</div>
+          <div id="timePatch" class="overlayTimeDatePatch"></div>
+          <!-- 
+          <div class="overlayLinkList">
+            <a>IQQ Drive</a>
+            <br/>
+            <a href="ide/">Development Network / IDE</a>
+            <br/>
+            <a>IQQ Dashboard</a>
+            <br/>
+            <a>Mail</a>
+            <br/>
+            <a>Link Shortner</a>
+            <br/>
+            <a>Systems Manager</a>
+          </div>
+        </div>
+        -->
+        <table class="navLinkTable">
+          <tr>
+            <th>Services</th>
+            <th>Utilities</th>
+            <th>Diagnostics</th>
+          </tr>
+          <tr>
+            <td>Network Storage Portal</td>
+            <td>IQQ API</td>
+            <td>Systems Test</td>
+          </tr>
+          <tr>
+            <td>Mail</td>
+            <td>Docker Container Manager</td>
+            <td>Benchmark</td>
+          </tr>
+          <tr>
+            <td>Link Shortner</td>
+            <td><a href="ide/index.php" target="_blank">IDE Portal</a></td>
+            <td>Logfiles</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+        </table>
+        <!--END OF FULL SCREEN NAV-->
+
+    </body>
+</html>
