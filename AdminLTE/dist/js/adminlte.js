@@ -1837,3 +1837,16 @@
 
 })));
 //# sourceMappingURL=adminlte.js.map
+
+function submitSearch()
+{
+  var input = document.getElementById('search-input').value;
+
+  input = input.replace(" ", "+");
+  var query = "https://duckduckgo.com/?q=";
+  query = query.concat(input);
+
+  window.location = query;
+
+  alert("Search submitted...");
+}
